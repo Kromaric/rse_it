@@ -1,0 +1,139 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Accueil - RSE-IT
+{% endblock %}
+
+{% block body %}
+  <div class="accueil py-5">
+    <div class="row">
+      <div class="container px-4 px-lg-5  h-100 ">
+        <div class="d-flex justify-content-left">
+          <div class="text-center">
+            <h1 class="mx-auto mt-5 text-uppercase text-white fw-bold">Bienvenue sur le site de la RSE-IT</h1>
+            <h2 class="text-white-100 mx-auto mt-2 mb-5 text-white">Nous œuvrons pour la protection de l’environnement et le développement durable</h2>
+
+            <a class="btn btn-success" href="{{ path('activites') }}">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {#  #}
+  <div class="container-fluid">
+
+     <section>
+      <div class="row pt-5">
+        <div class="col-md-6 gx-5 mb-4">
+          <div class="bg-image hover-overlay shadow-2-strong" data-mdb-ripple-init data-mdb-ripple-color="light">
+            <img src="{{ asset('images/12.jpg') }}" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4">
+          <h4><strong>Notre histoire</strong></h4>
+          <p class="text-muted">
+            Depuis sa création, RSE-IT œuvre pour sensibiliser, éduquer et mobiliser autour des enjeux écologiques. À travers des actions concrètes sur le terrain, des ateliers, des événements et des campagnes d'information, nous souhaitons contribuer à un monde plus respectueux de notre planète.
+            
+          </p>
+          <p><strong>Notre mission</strong></p>
+          <p class="text-muted">
+            Faire le lien entre les technologies et l’écologie pour construire un futur plus responsable.
+            Nous croyons que chaque geste compte et que chacun d'entre nous peut jouer un rôle dans la préservation de notre environnement. Notre mission est de promouvoir des pratiques durables, d'encourager l'innovation verte et de sensibiliser le grand public aux enjeux environnementaux.
+            Nous travaillons en étroite collaboration avec des entreprises, des collectivités et des citoyens pour créer un impact positif et durable.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+
+
+    <!--Section: Content-->
+    <section class="text-center">
+      <h4 class="mb-5"><strong>Activités en cours</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/17.jpg') }}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Installation de nichoirs écologiques</h5>
+              <p class="card-text">
+                Nous posons des nichoirs dans les zones boisées pour favoriser la nidification des oiseaux locaux et préserver la biodiversité.
+              </p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/10.jpg') }}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Préservation des milieux naturels</h5>
+              <p class="card-text">
+                Participation à des actions de nettoyage et de revitalisation d'espaces verts, en collaboration avec les habitants et les écoles.
+              </p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>Découvrir l'action</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/15.jpg') }}" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sorties nature et observation</h5>
+              <p class="card-text">
+                Organisation de balades éducatives pour découvrir la faune locale et apprendre à reconnaître les espèces en voie de disparition.              </p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>Participer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+  
+    <div class="row py-5">
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card border-success text-center">
+              <div class="card-header">Événement à venir</div>
+              <div class="card-body">
+                <h5 class="card-title">Journée Écocitoyenne</h5>
+                <p class="card-text">Rejoignez-nous pour une journée de plantation d’arbres, d’ateliers créatifs et de sensibilisation à la consommation responsable..</p>
+                <a href="#" class="btn btn-success"> En savoir plus</a>
+              </div>
+              <div class="card-footer text-body-secondary"> Samedi 4 mai 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    
+  </div>
+{% endblock %}

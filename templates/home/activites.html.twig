@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Activites - RSE-IT
+{% endblock %}
+
+{% block body %}
+  <section class="activites my-5 py-4">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="text-center">
+          <h1 class="mx-auto mt-5 text-uppercase text-white fw-bold">Nos Activités</h1>
+          <h5 class="mx-auto mt-2 mb-5 text-white fw-bold">Chez RSE-IT, nous croyons qu’un changement durable commence par des actions concrètes, locales et inclusives. Nos activités s’articulent autour de plusieurs axes complémentaires, tous orientés vers un objectif commun : protéger notre environnement et encourager une transition écologique responsable.</h5>
+          <a class="btn btn-success" href="{{ path('activites') }}">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid">
+    <!-- Section: Content -->
+    <section class="text-center">
+      <h4 class="mb-3"><strong>Activités en cours</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/17.jpg') }}" class="img-fluid" />
+              <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Installation de nichoirs écologiques</h5>
+              <p class="card-text">Nous posons des nichoirs dans les zones boisées pour favoriser la nidification des oiseaux locaux et préserver la biodiversité.</p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>Participer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/10.jpg') }}" class="img-fluid" />
+              <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Préservation des milieux naturels</h5>
+              <p class="card-text">Participation à des actions de nettoyage et de revitalisation d'espaces verts, en collaboration avec les habitants et les écoles.</p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>Participer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/15.jpg') }}" class="img-fluid" />
+              <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sorties nature et observation</h5>
+              <p class="card-text">Organisation de balades éducatives pour découvrir la faune locale et apprendre à reconnaître les espèces en voie de disparition.</p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>Participer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Content -->
+
+    <!-- Section: Content -->
+    <section class="text-center">
+      <h4 class="mb-3"><strong>Activités passées</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/33.jpg') }}" class="img-fluid" />
+              <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Recyclage et gestion des déchets</h5>
+              <p class="card-text">Collecte et tri des déchets recyclables dans les quartiers pour sensibiliser la population à l'importance du recyclage et réduire l'impact environnemental.</p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/34.jpg') }}" class="img-fluid" />
+              <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Reboisement et plantations locales</h5>
+              <p class="card-text">Mise en terre d'espèces végétales locales pour restaurer les écosystèmes, améliorer la qualité de l'air et renforcer la résilience face aux changements climatiques.</p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="{{ asset('images/35.jpg') }}" class="img-fluid" />
+              <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Campagne de sensibilisation écologique</h5>
+              <p class="card-text">Actions de mobilisation et de sensibilisation sur les enjeux environnementaux pour inciter à un changement de comportement face à la pollution et à la crise climatique.</p>
+              <a href="{{ path('contact') }}" class="btn btn-success" data-mdb-ripple-init>En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Content -->
+  </div>
+{% endblock %}

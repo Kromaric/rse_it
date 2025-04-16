@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Evenements - RSE-IT
+{% endblock %}
+
+{% block body %}
+  <section class="evenements text-center py-5 my-5 text-white">
+    <div class="container">
+      <h1 class="mx-auto mt-5 text-uppercase text-white fw-bold">Nos Événements</h1>
+      <h2 class="text-white-100 mx-auto mt-2 mb-5 text-white">Découvrez les actions à venir pour un monde plus vert</h2>
+    </div>
+  </section>
+  <div class="container-fluid">
+  <section class="py-5 text-center">
+    <h4 class="mb-4 text-center fw-bold">Événements à venir</h4>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-4 col-md- mb-4">
+        <div class="card">
+          <img src="{{ asset('images/36.jpg') }}" class="card-img-top" alt="Journée de plantation" />
+          <div class="card-body">
+            <h5 class="card-title">Atelier écoresponsable en entreprise</h5>
+            <p class="card-text">Découvrez comment adopter des gestes écoresponsables au bureau. Réduction des déchets, tri sélectif, et astuces green pour le quotidien des collaborateurs.</p>
+            <p class="text-muted">
+              <i class="bi bi-calendar-event"></i> 15 avril 2025 | 14h00
+            </p>
+            <a href="#" class="btn btn-success">Je m'inscris</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <img src="{{ asset('images/39.jpg') }}" class="card-img-top" alt="Journée de plantation" />
+          <div class="card-body">
+            <h5 class="card-title">Journée de plantation d’arbres</h5>
+            <p class="card-text">Rejoignez-nous pour une journée de reboisement à la forêt communale de Bingerville. Ensemble, replantons pour demain !</p>
+            <p class="text-muted">
+              <i class="bi bi-calendar-event"></i> 20 avril 2025 | 09h00
+            </p>
+            <a href="#" class="btn btn-success">Je m'inscris</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <img src="{{ asset('images/ocean.jpg') }}" class="card-img-top" alt="Journée de plantation" />
+          <div class="card-body">
+            <h5 class="card-title">Sensibilisation à la protection des océans</h5>
+            <p class="card-text">Participez à une journée éducative autour de la préservation des milieux marins. Ateliers, quiz, et immersion pour petits et grands.</p>
+            <p class="text-muted">
+              <i class="bi bi-calendar-event"></i> 25 avril 2025 | 09h00
+            </p>
+            <a href="#" class="btn btn-success">Je m'inscris</a>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </section>
+  </div>
+{% endblock %}

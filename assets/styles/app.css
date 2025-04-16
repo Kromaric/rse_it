@@ -1,3 +1,64 @@
 body {
-    background-color: skyblue;
+    font-family: sans-serif;
+    background: #f0f5f0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #1e824c;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    ;
+}
+.nav-link {
+    color: #f0f5f0  ;
+}
+
+
+nav a.active {
+    text-decoration:#f0f5f0;
+}
+
+.accueil {
+    background-image: url('/images/13.jpg');
+    background-size: cover;
+    
+}
+.activites {
+    background-image: url('/images/37.jpg');
+    background-size: cover;
+    
+}
+.evenements {
+    background-image: url('/images/11.jpg');
+    background-size: cover;
+    
+}
+
+.galerie {
+    background-image: url('/images/36.jpg');
+    background-size: cover;
+    
+}
+
+.contact {
+    background-image: url('/images/16.jpg');
+    background-size: cover;
+    
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #1e824c;
 }
