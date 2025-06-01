@@ -43,7 +43,7 @@ Ce projet a été réalisé dans le cadre d’un **cours sur Symfony**. Il s’a
 
 ### 1. Cloner le dépôt :
 ```bash
-git clone [https://github.com/votre-utilisateur/rse-it-symfony.git](https://github.com/Kromaric/rse_it.git)
+git clone https://github.com/Kromaric/rse_it.git
 cd rse-it
 ```
 ### 2. Installer les dépendances :
